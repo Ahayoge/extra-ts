@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: local("Inter Regular"), local("Inter-Regular"),
+    url("./Fonts/Inter-RU.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1e1e2e;
+  height: 100%;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #181825;
+  margin: auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bolder;
+  color: #cba6f7;
+  margin-bottom: 15px;
+}
+
+.input,
+.select {
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 20px;
+  border: 2px #6c7086 solid;
+  background-color: #1e1e2e;
+  color: #fff;
+  font-weight: normal;
+}
+
+.select-area {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  width: 100%;
+  background-color: #cba6f7;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #dcc2fc;
+}
+
+.separator {
+  margin: 30px 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #45475a;
+}
+
+.table {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  border-collapse: collapse;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.thead,
+.tbody,
+.tr {
+  display: contents;
+}
+
+.tr:nth-child(odd) .td {
+  background-color: #1e1e2e;
+}
+
+.tr .th {
+  text-align: left;
+}
+
+.total-price {
+  color: #cba6f7;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.order-info {
+  margin-top: 15px;
+  text-align: center;
+  color: #f38ba8;
+  font-size: 24px;
+}
