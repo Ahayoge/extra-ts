@@ -16,6 +16,7 @@ body {
   background-color: #1e1e2e;
   height: 100%;
   font-weight: 400;
+  padding: 0 10px;
 }
 
 .flex {
@@ -111,4 +112,19 @@ body {
   text-align: center;
   color: #f38ba8;
   font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .select,
+  .button {
+    font-size: 16px;
+  }
 }
